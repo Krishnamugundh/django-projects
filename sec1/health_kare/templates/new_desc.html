@@ -1,0 +1,11 @@
+{% extends 'master.html' %}
+
+{% block pat %}
+
+<from method="POST" action="{% url 'login' %}">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">OK</button> 
+</from>
+
+{% endblock pat%}

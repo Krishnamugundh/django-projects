@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Kare</title>
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+</head>
+<title>Health Kare</title>
+<body>
+    <h1>My app</h1>
+    {% block doctor %}
+    {% endblock %}
+    {% block pat %}
+    {% endblock%}
+</body>
+</html>

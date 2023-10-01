@@ -1,0 +1,23 @@
+{% extends 'master.html' %}
+
+{% block doctor %}
+<h3>Patient's Register</h3>
+<a>hello, <a href="{% url 'PatCreate' %}">Here</a> is the login page</a>
+<a>list of patients.</a>
+<ul>
+    {% for i in names %}
+    <li>
+        id:{{i.pat_id}}
+        name:{{i.pat_name}}
+        age:{{i.age}}
+    </li>
+    {% endfor %}
+</ul>
+<hr>
+<h3>Doctor's Register</h3>
+<a>hello, <a href="">Here</a> is the login page</a>
+<hr>
+
+<a href="{% url 'user' %}">User register</a>
+
+{% endblock doctor %}
